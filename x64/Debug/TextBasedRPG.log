@@ -1,0 +1,11 @@
+﻿  Game.cpp
+C:\Users\nickr\source\repos\TextBasedRPG\TextBasedRPG\Game.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\nickr\source\repos\TextBasedRPG\TextBasedRPG\Game.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'Game.cpp')
+  
+C:\Users\nickr\source\repos\TextBasedRPG\TextBasedRPG\Game.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'Game.cpp')
+  
+C:\Users\nickr\source\repos\TextBasedRPG\TextBasedRPG\Game.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\nickr\source\repos\TextBasedRPG\TextBasedRPG\Game.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  TextBasedRPG.vcxproj -> C:\Users\nickr\source\repos\TextBasedRPG\x64\Debug\TextBasedRPG.exe
