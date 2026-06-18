@@ -1,9 +1,9 @@
 #pragma once
-
+#include "Character.h"
 #include <string>
 #include <vector>
 
-class Player {
+class Player : public Character {
 private:
     std::string name;
     int health;
