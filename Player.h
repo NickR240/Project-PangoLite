@@ -5,11 +5,6 @@
 
 class Player : public Character {
 private:
-    std::string name;
-    int health;
-    int maxHealth;
-    int attack;
-    int defense;
     int gold;
     int level;
     int experience;
@@ -19,7 +14,6 @@ public:
     Player();
 
     void setName(const std::string& newName);
-    const std::string& getName() const;
 
     void printStats() const;
 
@@ -27,10 +21,6 @@ public:
     void heal(int amount);
     bool isAlive() const;
 
-    int getAttack() const;
-    int getDefense() const;
-    int getHealth() const;
-    int getMaxHelath() const;
     int getGold() const;
     int getLevel() const;
     int getExperience() const;

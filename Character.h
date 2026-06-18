@@ -11,7 +11,7 @@ public:
         int attackPower,
         int defense
     );
-
+	//Virtual destructor to ensure object destruction happens in the correct order.
     virtual ~Character() = default;
 
     void takeDamage(int damage);

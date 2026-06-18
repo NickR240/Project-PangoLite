@@ -17,11 +17,14 @@ Character::Character(
 
 void Character::takeDamage(int damage)
 {
+	//if Damage is 0 or negative, it means the attack missed or was ineffective. No damage is taken.
     if (damage <= 0)
     {
         return;
     }
 
+	//OVERLY simplistic damage calculation. Will replace with something better later.
+	//Returns greater of given values. Ensures that at least 1 damage is taken if the attack is successful.
     const int actualDamage = std::max(1, damage - defense_);
     health_ = std::max(0, health_ - actualDamage);
 }
@@ -32,7 +35,7 @@ void Character::heal(int amount)
     {
         return;
     }
-
+	// Increases health by the specified amount, but does not exceed maxHealth_.
     health_ = std::min(maxHealth_, health_ + amount);
 }
 
@@ -40,7 +43,7 @@ bool Character::isDefeated() const
 {
     return health_ <= 0;
 }
-
+//Getters
 const std::string& Character::getName() const
 {
     return name_;
