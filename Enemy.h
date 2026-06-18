@@ -17,3 +17,15 @@ private:
 	int defense_;
 	int experienceReward_;
 };
+class Skeleton : public Enemy {
+	public:
+		Skeleton();
+};
+class Zombie : public Enemy {
+	public:
+		Zombie();
+};
+class Goblin : public Enemy {
+	public:
+		Goblin();
+};
