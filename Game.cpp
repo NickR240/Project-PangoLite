@@ -13,7 +13,6 @@ void initializeGame()
 };
 void generateMainMenu() 
 {
-
 	//Needed to putput UTF-8 characters in the console.
 	SetConsoleOutputCP(CP_UTF8);
 
@@ -38,17 +37,18 @@ void generateMainMenu()
 
 void characterCreator() 
 {
-
-	std::cout << "Enter your character's name: ";
 	std::string name;
+	clearScreen();
+	std::cout << "Enter your character's name: ";
 	std::getline(std::cin, name);
-	std::cout << "Welcome, " << name << "! Your adventure begins now." << std::endl;
+
 	// Additional character creation logic would go here
-};
+}
 
 void startNewGame() 
 {
 	std::cout << "Starting a new game..." << std::endl;
+	characterCreator();
 	
 	// Additional game setup and logic would go here
 };
@@ -114,4 +114,8 @@ void optionSelection(int& selection)
 			exitGame();
 			break;
 	}
+}
+void clearScreen()
+{
+	std::cout << "\x1B[2J\x1B[H";
 }

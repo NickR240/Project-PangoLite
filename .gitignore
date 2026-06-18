@@ -1,0 +1,18 @@
+# Visual Studio cache
+.vs/
+
+# Build folders
+x64/
+x86/
+Debug/
+Release/
+
+# Compiled files
+*.obj
+*.exe
+*.pdb
+*.ilk
+
+# User-specific Visual Studio files
+*.user
+*.suo

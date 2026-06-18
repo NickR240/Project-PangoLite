@@ -19,7 +19,7 @@ public:
     Player();
 
     void setName(const std::string& newName);
-    std::string getName() const;
+    const std::string& getName() const;
 
     void printStats() const;
 
@@ -30,7 +30,10 @@ public:
     int getAttack() const;
     int getDefense() const;
     int getHealth() const;
+    int getMaxHelath() const;
     int getGold() const;
+    int getLevel() const;
+    int getExperience() const;
 
     void addGold(int amount);
     bool spendGold(int amount);
